@@ -1,4 +1,4 @@
-probability distribution part 1
+probability distributions part 1
 
 dat = read.csv("femaleMiceWeights.csv")
 
@@ -22,6 +22,7 @@ q5: null = replicate(10000, mean(sample(dat, 12)) - mean(sample(dat, 12)))
     mean(null > abs(diff))
 
 q6: mean(abs(null) > abs(diff))
-    # or you can multiply by 2 the value you got from the previous question
+
+# or you can multiply by 2 the value you got from the previous question
 
     
